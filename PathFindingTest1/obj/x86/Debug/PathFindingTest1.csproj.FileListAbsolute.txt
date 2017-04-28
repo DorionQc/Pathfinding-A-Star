@@ -1,0 +1,32 @@
+C:\Users\Sam\Desktop\C# Stuffs\JSON Text\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.frmPathfinding.resources
+C:\Users\Sam\Desktop\C# Stuffs\JSON Text\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.Properties.Resources.resources
+C:\Users\Sam\Desktop\C# Stuffs\JSON Text\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csproj.GenerateResource.Cache
+C:\Users\Sam\Desktop\C# Stuffs\JSON Text\PathFindingTest1\PathFindingTest1\bin\Debug\PathFindingTest1.exe
+C:\Users\Sam\Desktop\C# Stuffs\JSON Text\PathFindingTest1\PathFindingTest1\bin\Debug\PathFindingTest1.pdb
+C:\Users\Sam\Desktop\C# Stuffs\JSON Text\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.exe
+C:\Users\Sam\Desktop\C# Stuffs\JSON Text\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.pdb
+C:\Users\Sam\Desktop\C# Stuffs\JSON Text\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Desktop\C# Stuffs\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.exe
+C:\Users\Sam\Desktop\C# Stuffs\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.pdb
+C:\Users\Sam\Desktop\C# Stuffs\PathFindingTest1\PathFindingTest1\bin\Debug\PathFindingTest1.exe
+C:\Users\Sam\Desktop\C# Stuffs\PathFindingTest1\PathFindingTest1\bin\Debug\PathFindingTest1.pdb
+C:\Users\Sam\Desktop\C# Stuffs\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Desktop\C# Stuffs\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.frmPathfinding.resources
+C:\Users\Sam\Desktop\C# Stuffs\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.Properties.Resources.resources
+C:\Users\Sam\Desktop\C# Stuffs\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csproj.GenerateResource.Cache
+D:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.exe
+D:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.pdb
+D:\Random shit\PathFindingTest1\PathFindingTest1\bin\Debug\PathFindingTest1.exe
+D:\Random shit\PathFindingTest1\PathFindingTest1\bin\Debug\PathFindingTest1.pdb
+D:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csprojResolveAssemblyReference.cache
+D:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.frmPathfinding.resources
+D:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.Properties.Resources.resources
+D:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csproj.GenerateResource.Cache
+E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.exe
+E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.pdb
+E:\Random shit\PathFindingTest1\PathFindingTest1\bin\Debug\PathFindingTest1.exe
+E:\Random shit\PathFindingTest1\PathFindingTest1\bin\Debug\PathFindingTest1.pdb
+E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csprojResolveAssemblyReference.cache
+E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.frmPathfinding.resources
+E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.Properties.Resources.resources
+E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csproj.GenerateResource.Cache
