@@ -30,3 +30,11 @@ E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.
 E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.frmPathfinding.resources
 E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.Properties.Resources.resources
 E:\Random shit\PathFindingTest1\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csproj.GenerateResource.Cache
+C:\Users\Sam\Documents\GitHub\Pathfinding-A-Star\PathFindingTest1\obj\x86\Debug\PathFindingTest1.exe
+C:\Users\Sam\Documents\GitHub\Pathfinding-A-Star\PathFindingTest1\obj\x86\Debug\PathFindingTest1.pdb
+C:\Users\Sam\Documents\GitHub\Pathfinding-A-Star\PathFindingTest1\bin\Debug\PathFindingTest1.exe
+C:\Users\Sam\Documents\GitHub\Pathfinding-A-Star\PathFindingTest1\bin\Debug\PathFindingTest1.pdb
+C:\Users\Sam\Documents\GitHub\Pathfinding-A-Star\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Documents\GitHub\Pathfinding-A-Star\PathFindingTest1\obj\x86\Debug\PathFindingTest1.frmPathfinding.resources
+C:\Users\Sam\Documents\GitHub\Pathfinding-A-Star\PathFindingTest1\obj\x86\Debug\PathFindingTest1.Properties.Resources.resources
+C:\Users\Sam\Documents\GitHub\Pathfinding-A-Star\PathFindingTest1\obj\x86\Debug\PathFindingTest1.csproj.GenerateResource.Cache
