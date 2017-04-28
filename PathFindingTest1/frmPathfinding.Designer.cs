@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.Name = "frmPathfinding";
             this.Text = "PathFinding";
+            this.Shown += new System.EventHandler(this.frmPathfinding_Shown);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmPathfinding_Paint);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmPathfinding_KeyPress);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.frmPathfinding_MouseClick);

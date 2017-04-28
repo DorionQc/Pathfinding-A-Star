@@ -11,6 +11,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 
 using PathFindingTest1.Pathfinding;
@@ -23,16 +24,20 @@ namespace PathFindingTest1
 
         Grille m_Grille;
         bool m_MiddlePressed;
+        bool m_Drawing;
+        List<Path> m_lPaths;
+        bool m_Animer;
 
 
         public frmPathfinding()
         {
             InitializeComponent();
-            this.SetStyle(ControlStyles.UserPaint, true);
-            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            this.DoubleBuffered = true;
             m_Grille = new Grille(new Size(30, 30), this.ClientSize);
             m_MiddlePressed = false;
+            m_Drawing = false;
+            m_lPaths = new List<Path>();
+            m_Animer = true;
             m_Grille.Initialise();
         }
 
@@ -82,11 +87,39 @@ namespace PathFindingTest1
         {
             if (e.KeyChar == '#')
             {
-                Path p = new Path(m_Grille.getBeginPoint(), m_Grille.getEndPoint(), m_Grille);
-                p.Trace(this);
+                if (m_Drawing)
+                    return;
+                Thread t = new Thread(new ThreadStart(Trace));
+                t.Start();
+                m_Drawing = true;
+            }
+            else if (e.KeyChar == 'r')
+            {
+                m_lPaths.ForEach((p) => p.Stop());
+                m_Grille.Reset();
+                this.Invalidate();
+            }
+            else if (e.KeyChar == 'a')
+            {
+                m_Animer = !m_Animer;
+                MessageBox.Show("Animer = " + m_Animer.ToString());
+                m_lPaths.ForEach((p) => p.ChangeAnimer(m_Animer));
             }
         }
 
+        private void Trace()
+        {
+           
+            Path p = new Path(m_Grille.getBeginPoint(), m_Grille.getEndPoint(), m_Grille, m_Animer);
+            m_lPaths.Add(p);
+            p.Trace(this);
+            m_Drawing = false;
+        }
 
+        private void frmPathfinding_Shown(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sur la souris :\nBouton gauche = Point de départ\nBouton du milieu (click de roulette) = Point de fin\nBouton droit (enfoncé) = Murs\n\n" +
+                            "Sur le clavier :\nTouche # (à côté du 1) = Exécuter\nTouche 'R' = Réinitialiser.\nTouche 'A' = Enlever l'animation");
+        }
     }
 }

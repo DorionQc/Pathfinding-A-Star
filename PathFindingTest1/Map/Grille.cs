@@ -194,5 +194,10 @@ namespace PathFindingTest1.Map
                     m_tCase[J, I].Draw(g);
                 }
         }
+
+        public void Reset()
+        {
+            Initialise();
+        }
     }
 }

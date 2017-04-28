@@ -20,13 +20,37 @@ namespace PathFindingTest1.Pathfinding
 
         Grille m_Grille;
 
-        public Path(Case Begin, Case End, Grille Grille)
+        bool m_Stop;
+        bool m_Animer;
+
+        object Lock;
+
+        public Path(Case Begin, Case End, Grille Grille, bool Animer)
         {
             m_Begin = Begin;
             m_End = End;
             m_ListPath = new List<Case>();
             m_ListToCheck = new List<Case>();
+            m_Stop = false;
+            m_Animer = Animer;
+            Lock = new object();
             m_Grille = Grille;
+        }
+
+        public void Stop()
+        {
+            lock (Lock)
+            {
+                m_Stop = true;
+            }
+        }
+
+        public void ChangeAnimer(bool v)
+        {
+            lock (Lock)
+            {
+                m_Animer = v;
+            }
         }
 
         // Based on A* Algorithm
@@ -40,7 +64,7 @@ namespace PathFindingTest1.Pathfinding
             c.CalculateCost(0, m_End);
             
 
-            while (c != m_End && Iteration < 16384 && m_ListToCheck.Any() && c != null)
+            while (c != m_End && Iteration < 16384 && m_ListToCheck.Any() && c != null && !m_Stop)
             {
                 // Find lowest F-Value in ListToCheck
                 // Check all cases around and calculate their G-Value
@@ -58,21 +82,33 @@ namespace PathFindingTest1.Pathfinding
                     {
                         cn.CalculateCost(c, m_End);
                         m_ListToCheck.Add(cn);
-                        cn.setType(5);
-                        f.Refresh();
-                        Thread.Sleep(5);
+                        
+                        if (m_Animer)
+                        {
+                            cn.setType(5);
+                            Refresh(f);
+                            Thread.Sleep(5);
+                        }
+                        
                         cn.setType(4);
                     }
                     m_ListToCheck.Remove(c);
                     c.Checked = true;
                     Iteration++;
-                    f.Refresh();
+                    if (m_Animer)
+                    {
+                        Refresh(f);
+                    }
                     c.setType(6);
                     if (c == m_Begin)
                         c.setType(2);
                     if (c == m_End)
                         c.setType(3);
-                    Thread.Sleep(10);
+                    if (m_Animer)
+                    {
+                        Thread.Sleep(10);
+                    }
+                    
                 }
 
             }
@@ -84,11 +120,27 @@ namespace PathFindingTest1.Pathfinding
                     m_ListPath.Add(c);
                     c.setType(5);
                     c = c.ParentCase;
-                    f.Refresh();
-                    Thread.Sleep(50);
+                    if (m_Animer)
+                    {
+                        Refresh(f);
+                        Thread.Sleep(50);
+                    }
+                    
                 }
             }
-            f.Refresh();
+            Refresh(f);
+        }
+
+        private void Refresh(Form f)
+        {
+            try
+            {
+                f.Invoke(new Action(() => f.Refresh()));
+            }
+            catch (Exception)
+            {
+                // Le formulaire n'est plus accessible, sans doute a-t-il été fermé.
+            }
         }
 
         private Case FindLowestFCost()
